@@ -36,7 +36,7 @@ const Freebie = ({imgPath,name,desc,url}) => {
                     title={name}
                 />
                 <CardContent className={classes.cardContent}>
-                    <a href={url} target="_blank">
+                    <a href={url} rel="noreferrer" target="_blank">
                     <Typography gutterBottom variant="h5" component="h2">
                         {name}
                     </Typography>
