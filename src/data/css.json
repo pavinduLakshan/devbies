@@ -1,8 +1,26 @@
 [
     {
         "img": "https://i.imgur.com/6X7QPQa.png",
-        "name": "daisyUI",
+        "name": "DaisyUI",
         "desc": "Tailwind CSS Components",
         "url": "https://daisyui.com/"
+    },
+    {
+        "img": "https://i.imgur.com/9Yv5sKt.png",
+        "name": "Mesh Gradients",
+        "desc": "Hand-curated Mesh Gradient Collection",
+        "url": "https://www.meshgradients.design/"
+    },
+    {
+        "img": "https://i.imgur.com/M6CF5dE.png",
+        "name": "Glassmorphism CSS Generator",
+        "desc": "Get started with this free CSS generator based on the glassmorphism design specifications to quickly design and customize the style properties.",
+        "url": "https://ui.glass/generator/"
+    },
+    {
+        "img": "https://i.imgur.com/whsdqLa.png",
+        "name": "TailwindCSS Buttons",
+        "desc": "A unique collection of Copy & Paste TailwindCSS buttons 🙌",
+        "url": "https://devdojo.com/tailwindcss/buttons"
     }
 ]

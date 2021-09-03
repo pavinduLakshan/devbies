@@ -6,9 +6,15 @@
         "url": "https://illlustrations.co/"
     },
     {
-        "img": "https://i.imgur.com/6X7QPQa.png",
+        "img": "https://i.imgur.com/M7leu0h.png",
         "name": "BlobbbFun",
         "desc": "Generate custom BLOB and download as SVG",
         "url": "https://www.blobbb.fun/"
+    },
+    {
+        "img": "https://i.imgur.com/3zngtbY.png",
+        "name": "Scale by Flexiple",
+        "desc": "One new high-quality, open-source illustration each day. No attribution needed!",
+        "url": "https://2.flexiple.com/scale/multi-color-illustrations"
     }
 ]

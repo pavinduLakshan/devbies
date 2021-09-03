@@ -28,7 +28,7 @@ const Freebie = ({imgPath,name,desc,url}) => {
     const classes = useStyles();
 
     return (
-        <Grid item xs={12} sm={6} md={4} spacing={3}>
+        <Grid item xs={12} sm={6} md={4} spacing={6}>
             <Card className={classes.card}>
                 <CardMedia
                     className={classes.cardMedia}
