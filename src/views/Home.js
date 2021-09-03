@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {NavLink} from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles';
-import {Grid,Typography, Container, Chip, Box} from '@material-ui/core';
+import {Grid,Typography, Container, Chip} from '@material-ui/core';
 import Freebie from "../components/Freebie"
 import {freebies} from "../data"
 
