@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       top: 0, 
       right: 0,
       zIndex: 10,
-      backgroundColor: "#F26BEE",
+      backgroundColor: "#BC51F1",
       width: "100%" 
     },
     tagContainer: {
@@ -29,9 +29,9 @@ const useStyles = makeStyles((theme) => ({
     },
     tag: {
         cursor: "pointer",
-        "&:hover": {
-          transform: "scale(1.4)"
-        }
+        "&:hover, &:active": window.matchMedia('(min-width: 768px)').matches ? {
+          transform: "scale(1.3)"
+        } : null
     },
     noTagSelected: {
       display: "flex",
