@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles';
 import {Grid,Typography, Container, Chip} from '@material-ui/core';
 import Freebie from "../components/Freebie"
+import NotSelected from "assets/not_selected.svg"
 import {freebies} from "../data"
 
 const useStyles = makeStyles((theme) => ({
@@ -32,6 +33,15 @@ const useStyles = makeStyles((theme) => ({
           transform: "scale(1.4)"
         }
     },
+    noTagSelected: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      width: "100%",
+      color: "gray",
+      justifyContent: "center",
+      height: "70vh"
+    },
     cardGrid: {
       paddingTop: theme.spacing(4),
       paddingBottom: theme.spacing(8),
@@ -52,8 +62,8 @@ const Home = () => {
         <Grid container spacing={3}>
         <div className={classes.titleContainer}>
           <Grid item xs={12} >
-          <Typography style={{marginTop: "1%",fontFamily: "ZCOOL KuaiLe, cursive"}} variant="h4" component="h4">Freebies for Developers</Typography>
-          <Typography style={{marginLeft: "auto", marginRight: "auto",marginTop: "1%",width: "50%"}} variant="h6" component="h4">
+          <Typography style={{marginTop: "1%",fontFamily: "ZCOOL KuaiLe, cursive"}} variant="h4" component="h4">Devbies - Freebies for Developers</Typography>
+          <Typography style={{color: "white",marginLeft: "auto", marginRight: "auto",marginTop: "1%",width: "50%"}} variant="h6" component="h4">
           A curated collection of 1000+ free developer resources
           </Typography>
         </Grid>
@@ -82,6 +92,10 @@ const Home = () => {
             />
             )
            })}
+           {!selectedTagParam && <div className={classes.noTagSelected}>
+               <img src={NotSelected} alt="no category selected" height="150" width="150" />
+            <Typography variant="h6" component="h6">Select a category to view freebies</Typography>
+             </div>}
           </Grid>
         </Container>
      
