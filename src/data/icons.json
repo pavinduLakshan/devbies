@@ -4,5 +4,11 @@
         "name": "Streamline Icons",
         "desc": "With 12 different styles and impressive choice of themes, you will always find the right icon for your projects. All built from scratch by our team, searchable through our app or plugin for Figma, Sketch and Adobe XD.",
         "url": "https://app.streamlinehq.com/icons"
+    },
+    {
+        "img": "https://i.imgur.com/wLm8nUg.png",
+        "name": "SVG Repo",
+        "desc": "Browse 300.000+ SVG Vectors and Icons",
+        "url": "https://www.svgrepo.com/"
     }
 ]

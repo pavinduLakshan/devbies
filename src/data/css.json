@@ -22,5 +22,11 @@
         "name": "TailwindCSS Buttons",
         "desc": "A unique collection of Copy & Paste TailwindCSS buttons 🙌",
         "url": "https://devdojo.com/tailwindcss/buttons"
+    },
+    {
+        "img": "https://i.imgur.com/UZAShsd.png",
+        "name": "wickedblocks",
+        "desc": "Ready Made Tailwind CSS blocks,for your next project.",
+        "url": "https://blocks.wickedtemplates.com/"
     }
 ]
