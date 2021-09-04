@@ -1,6 +1,6 @@
 [
     {
-        "img": "https://i.imgur.com/6X7QPQa.png",
+        "img": "https://i.imgur.com/oOr09fO.png",
         "name": "DaisyUI",
         "desc": "Tailwind CSS Components",
         "url": "https://daisyui.com/"
@@ -28,5 +28,17 @@
         "name": "wickedblocks",
         "desc": "Ready Made Tailwind CSS blocks,for your next project.",
         "url": "https://blocks.wickedtemplates.com/"
+    },
+    {
+        "img": "https://i.imgur.com/j2vuVWT.png",
+        "name": "NES. css",
+        "desc": "NES.css is NES-style (8bit-like) CSS Framework.",
+        "url": "https://nostalgic-css.github.io/NES.css/"
+    },
+    {
+        "img": "https://i.imgur.com/NulvGyl.png",
+        "name": "transition.css",
+        "desc": "Drop-in CSS transitions",
+        "url": "https://www.transition.style/"
     }
 ]

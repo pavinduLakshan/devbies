@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
       color: "gray",
       justifyContent: "center",
-      height: "70vh"
+      height: "55vh"
     },
     cardGrid: {
       paddingTop: theme.spacing(4),
@@ -53,6 +53,13 @@ const Home = () => {
     const params = new URLSearchParams(window.location.search)
     const selectedTagParam = params.get("tag")
     const [tags,setTags] = useState([])
+    const totalFreebies = getTotalFreebieCount()
+    
+    function getTotalFreebieCount(){
+      let count = 0
+      Object.keys(freebies).map(k => count += freebies[k].length)
+      return Math.floor(count / 10) * 10;
+    }
 
     useEffect(() => {
         setTags(Object.keys(freebies))
@@ -64,7 +71,7 @@ const Home = () => {
           <Grid item xs={12} >
           <Typography style={{marginTop: "1%",fontFamily: "ZCOOL KuaiLe, cursive"}} variant="h4" component="h4">Devbies - Freebies for Developers</Typography>
           <Typography style={{color: "white",marginLeft: "auto", marginRight: "auto",marginTop: "1%",width: "50%"}} variant="h6" component="h4">
-          A curated collection of 1000+ free developer resources
+          A curated collection of {totalFreebies}+ free developer resources
           </Typography>
         </Grid>
         <Grid item xs={12} className={classes.tagContainer}>
