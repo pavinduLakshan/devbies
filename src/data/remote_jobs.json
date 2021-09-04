@@ -1,0 +1,32 @@
+[
+    {
+        "img": "https://www.freecodecamp.org/news/content/images/size/w1000/2021/07/Screen-Shot-2021-07-23-at-11.37.56-PM.png",
+        "name": "We Work Remotely",
+        "desc": "We Work Remotely is the largest remote work community in the world. With over 3M visitors, WWR is the number one destination to find and list incredible remote jobs.",
+        "url": "https://weworkremotely.com/"
+    },
+    {
+        "img": "https://www.freecodecamp.org/news/content/images/size/w1000/2021/07/Screen-Shot-2021-07-24-at-12.27.33-AM.png",
+        "name": "Remote OK",
+        "desc": "work anywhere, live anywhere #OpenSalaries",
+        "url": "https://remoteok.io/"
+    },
+    {
+        "img": "https://i.imgur.com/ga3TyoA.png",
+        "name": "Remote.co",
+        "desc": "All Things Remote Work",
+        "url": "https://remote.co/"
+    },
+    {
+        "img": "https://www.freecodecamp.org/news/content/images/size/w1000/2021/07/Screen-Shot-2021-07-24-at-1.30.40-AM.png",
+        "name": "Authentic Jobs",
+        "desc": "The leading job board for designers, developers, and creative pros.",
+        "url": "https://authenticjobs.com/?search_location=remote"
+    },
+    {
+        "img": "https://www.freecodecamp.org/news/content/images/size/w1000/2021/07/Screen-Shot-2021-07-24-at-1.45.35-AM.png",
+        "name": "Stack Overflow",
+        "desc": "Stack Overflow Jobs puts developers first. Discover high-quality developer jobs on the site you already know and trust.",
+        "url": "https://stackoverflow.com/jobs"
+    }
+]
