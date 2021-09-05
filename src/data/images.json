@@ -1,0 +1,50 @@
+[
+    {
+        "img": "https://buffer.com/library/content/images/size/w1000/library/wp-content/uploads/2018/11/free-images-unsplash.png",
+        "name": "Unsplash",
+        "desc": "The internet’s source of freely-usable images, Powered by creators everywhere.",
+        "url": "https://unsplash.com/"
+    },
+    {
+        "img": "https://buffer.com/library/content/images/size/w1000/library/wp-content/uploads/2014/05/free-images-burst.png",
+        "name": "Burst",
+        "desc": "Download free, high-resolution images",
+        "url": "https://burst.shopify.com/"
+    },
+    {
+        "img": "https://buffer.com/library/content/images/size/w1000/library/wp-content/uploads/2014/05/free-images-pexels.png",
+        "name": "Pexels",
+        "desc": "The best free stock photos & videos shared by talented creators.",
+        "url": "https://www.pexels.com/"
+    },
+    {
+        "img": "https://buffer.com/library/content/images/size/w1000/library/wp-content/uploads/2014/05/free-images-pixabay.png",
+        "name": "Pixabay",
+        "desc": "Stunning free images & royalty free stock, Over 2.4 million+ high quality stock images, videos and music shared by our talented community.",
+        "url": "https://pixabay.com/"
+    },
+    {
+        "img": "https://buffer.com/library/content/images/size/w1000/library/wp-content/uploads/2018/11/free-images-free-image.png",
+        "name": "Free Images",
+        "desc": "Find free stock images, ready for your projects",
+        "url": "https://www.freeimages.com/"
+    },
+    {
+        "img": "https://buffer.com/library/content/images/size/w1000/library/wp-content/uploads/2018/11/free-images-kaboompics.png",
+        "name": "Kaboompics",
+        "desc": "Kaboompics is one of the most popular source of free images for lifestyle, interior design and specialized bloggers in World.",
+        "url": "https://kaboompics.com/"
+    },
+    {
+        "img": "https://buffer.com/library/content/images/size/w1000/library/wp-content/uploads/2018/11/free-image-stocksnap.png",
+        "name": "Stocksnap",
+        "desc": "Beautiful Free Stock Photos High-quality, safe-to-use CC0 images added daily. Free from copyright restrictions.",
+        "url": "https://stocksnap.io/"
+    },
+    {
+        "img": "https://buffer.com/library/content/images/size/w1000/library/wp-content/uploads/2018/11/free-images-life-of-pix.png",
+        "name": "Life of Pix",
+        "desc": "Free high-resolution photos, no copyrights restrictions for personal and commercial use. New photographies added weekly! All images are donated to the public domain.",
+        "url": "https://www.lifeofpix.com/"
+    }
+]

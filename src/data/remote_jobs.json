@@ -25,8 +25,14 @@
     },
     {
         "img": "https://www.freecodecamp.org/news/content/images/size/w1000/2021/07/Screen-Shot-2021-07-24-at-1.45.35-AM.png",
-        "name": "Stack Overflow",
+        "name": "Stack Overflow Jobs",
         "desc": "Stack Overflow Jobs puts developers first. Discover high-quality developer jobs on the site you already know and trust.",
         "url": "https://stackoverflow.com/jobs"
+    },
+    {
+        "img": "https://i.imgur.com/eJIGsY6.png",
+        "name": "JustRemote",
+        "desc": "Remote Jobs That Fit Your Life. Discover fully and partially remote jobs from the greatest remote working companies",
+        "url": "https://justremote.co/"
     }
 ]
