@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {NavLink} from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles';
 import {Grid,Typography, Container, Chip} from '@material-ui/core';
+import {ChevronLeft,ChevronRight} from "@material-ui/icons"
 import Freebie from "../components/Freebie"
 import NotSelected from "assets/not_selected.svg"
 import {freebies} from "../data"
@@ -18,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
     tagContainer: {
         display: "flex",
         width: "100%",
+        height: "10vh",
+        alignItems: "center",
+        marginTop: "1%",
+        marginBottom: "1%",
         flexDirection: "row",
         justifyContent: "center"
     },
@@ -45,6 +50,23 @@ const useStyles = makeStyles((theme) => ({
     cardGrid: {
       paddingTop: theme.spacing(4),
       paddingBottom: theme.spacing(8),
+    },
+    heading: {
+      marginTop: "1%",
+      fontFamily: "ZCOOL KuaiLe, cursive"
+    },
+    subHeading: {
+      color: "white",
+      marginLeft: "auto", 
+      marginRight: "auto",
+      marginTop: "1%",
+      width: "50%"
+    },
+    innerTagContainer: {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "row",
+      width: "75%"
     }
 }));
 
@@ -53,6 +75,7 @@ const Home = () => {
     const params = new URLSearchParams(window.location.search)
     const selectedTagParam = params.get("tag")
     const [tags,setTags] = useState([])
+    const [currentTagSetNo,setCurrentTagSetNo] = useState(1)
     const totalFreebies = getTotalFreebieCount()
     
     function getTotalFreebieCount(){
@@ -69,13 +92,24 @@ const Home = () => {
         <Grid container spacing={3}>
         <div className={classes.titleContainer}>
           <Grid item xs={12} >
-          <Typography style={{marginTop: "1%",fontFamily: "ZCOOL KuaiLe, cursive"}} variant="h4" component="h4">Devbies - Freebies for Developers</Typography>
-          <Typography style={{color: "white",marginLeft: "auto", marginRight: "auto",marginTop: "1%",width: "50%"}} variant="h6" component="h4">
+          <Typography className={classes.heading} variant="h4" component="h4">Devbies - Freebies for Developers</Typography>
+          <Typography className={classes.subHeading} variant="h6" component="h4">
           A curated collection of {totalFreebies}+ free developer resources
           </Typography>
         </Grid>
         <Grid item xs={12} className={classes.tagContainer}>
-          {tags.length > 0 && tags.map(tag => <NavLink className={classes.tagItem} to={"/?tag=" + tag}>
+          <ChevronLeft style={{
+            color: currentTagSetNo === 1 ? "#5F5A5F" : "white",
+            fontSize: 35,
+            cursor: "pointer"}} onClick={() => {
+            if(currentTagSetNo > 1){
+              setCurrentTagSetNo(currentTagSetNo - 1)
+            }
+          }}/>
+          <div className={classes.innerTagContainer}>
+          {tags.length > 0 && 
+          tags.slice((currentTagSetNo -1)*4, currentTagSetNo*4)
+          .map(tag => <NavLink className={classes.tagItem} to={"/?tag=" + tag}>
             <Chip
               className={classes.tag}
               size="medium"
@@ -83,6 +117,15 @@ const Home = () => {
               label={tag}
             />
           </NavLink>)}
+          </div>
+          <ChevronRight style={{
+            color: currentTagSetNo < Math.ceil(tags.length / 4)? "white":"#5F5A5F",
+            fontSize: 35,
+            cursor: "pointer"}} onClick={() => {
+            if(currentTagSetNo < Math.ceil(tags.length / 4) ){
+              setCurrentTagSetNo(currentTagSetNo + 1)
+            }
+          }}/>
         </Grid>
           </div>
 
