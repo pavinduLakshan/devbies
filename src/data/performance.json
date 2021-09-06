@@ -1,0 +1,14 @@
+[
+    {
+        "img": "https://i.imgur.com/JL5Sbrp.png",
+        "name": "BundlePhobia",
+        "desc": "find the cost of adding a npm package to your bundle",
+        "url": "https://bundlephobia.com/"
+    },
+    {
+        "img": "https://i.imgur.com/IgDJNsy.png",
+        "name": "Progressive Tooling",
+        "desc": "A list of community-built, third-party tools that can be used to improve page performance",
+        "url": "https://progressivetooling.com/"
+    }
+]

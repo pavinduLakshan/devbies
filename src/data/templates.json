@@ -1,0 +1,14 @@
+[
+    {
+        "img": "https://i.imgur.com/ljN3W18.png",
+        "name": "Froala Design Blocks",
+        "desc": "Over 170 responsive design blocks ready to be used in your web or mobile apps. Allblocks are based on the Bootstrap Library, and they are the building blocks for beautiful websites.",
+        "url": "https://froala.com/design-blocks#"
+    },
+    {
+        "img": "https://s3.amazonaws.com/www-inside-design/uploads/2018/11/velocity-hero-img.png",
+        "name": "Velocity - A Dashboard UI Kit",
+        "desc": "Beep beep. Meet Velocity, a UI kit for an imaginary self-driving car company. Borrow, remix, and remake for your own app.",
+        "url": "https://www.invisionapp.com/inside-design/design-resources/design-system-dashboard-ui-kit/"
+    }
+]
