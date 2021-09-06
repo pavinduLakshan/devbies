@@ -10,5 +10,11 @@
         "name": "SVG Repo",
         "desc": "Browse 300.000+ SVG Vectors and Icons",
         "url": "https://www.svgrepo.com/"
+    },
+    {
+        "img": "https://i.imgur.com/TloI452.png",
+        "name": "Simple Icons",
+        "desc": "2000+ Free SVG icons for popular brands",
+        "url": "https://simpleicons.org/"
     }
 ]

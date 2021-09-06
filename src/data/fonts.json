@@ -4,5 +4,17 @@
         "name": "Font Family Reunion",
         "desc": "Compatibility tables for default local fonts.",
         "url": "http://fontfamily.io/"
+    },
+    {
+        "img": "https://i.imgur.com/x5PVNMW.png",
+        "name": "The Inter typeface family",
+        "desc": "Inter is a typeface carefully crafted & designed for computer screens.",
+        "url": "https://rsms.me/inter/"
+    },
+    {
+        "img": "https://i.imgur.com/fBXcYZH.png",
+        "name": "Programming Fonts",
+        "desc": "Test drive all the programming fonts!",
+        "url": "https://www.programmingfonts.org/"
     }
 ]
