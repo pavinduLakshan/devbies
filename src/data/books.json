@@ -1,0 +1,50 @@
+[
+    {
+        "img": "https://i.imgur.com/w6OfaTh.png",
+        "name": "mhadidg/software-architecture-books",
+        "desc": "A comprehensive list of books on Software Architecture.",
+        "url": "https://github.com/mhadidg/software-architecture-books"
+    },
+    {
+        "img": "https://i.imgur.com/wNAchSF.png",
+        "name": "Tech Interview Handbook",
+        "desc": "Curated interview preparation materials for busy engineers, Brought to you by the author of the Blind 75 List",
+        "url": "https://techinterviewhandbook.org/"
+    },
+    {
+        "img": "https://i.imgur.com/jMcs1gP.png",
+        "name": "free-programming-books",
+        "desc": "Freely available programming books",
+        "url": "https://ebookfoundation.github.io/free-programming-books/"
+    },
+    {
+        "img": "https://i.imgur.com/FbFzGUB.png",
+        "name": "shivamms/books",
+        "desc": "Books on Natural Language Processing",
+        "url": "https://github.com/shivamms/books/tree/master/nlp"
+    },
+    {
+        "img": "https://i.imgur.com/pYQYK8t.png",
+        "name": "cjitendra12/javascript-ebooks-1",
+        "desc": "JavaScript Ebooks",
+        "url": "https://github.com/cjitendra12/javascript-ebooks-1"
+    },
+    {
+        "img": "https://i.imgur.com/4vs4GbH.png",
+        "name": "bitcoinbook/bitcoinbook",
+        "desc": "Mastering Bitcoin 2nd Edition - Programming the Open Blockchain",
+        "url": "https://github.com/bitcoinbook/bitcoinbook"
+    },
+    {
+        "img": "https://i.imgur.com/rGY5iUF.png",
+        "name": "getify/You-Dont-Know-JS",
+        "desc": "A book series on JavaScript. @YDKJS on twitter.",
+        "url": "https://github.com/getify/You-Dont-Know-JS"
+    },
+    {
+        "img": "https://i.imgur.com/2Decmv6.png",
+        "name": "twhite96/js-dev-reads",
+        "desc": "A list of books 📚and articles 📝 for the discerning web developer to read.",
+        "url": "https://github.com/twhite96/js-dev-reads"
+    }
+]

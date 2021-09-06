@@ -1,0 +1,26 @@
+[
+    {
+        "img": "https://i.imgur.com/N3LRj3E.png",
+        "name": " Microsoft Recommenders",
+        "desc": "The Recommenders repository provides examples and best practices for building recommendation systems, provided as Jupyter notebooks.",
+        "url": "https://microsoft-recommenders.readthedocs.io/en/latest/"
+    },
+    {
+        "img": "https://i.imgur.com/YZXTyLh.png",
+        "name": "goldbergyoni/nodebestpractices",
+        "desc": "✅ The Node.js best practices list",
+        "url": "https://github.com/goldbergyoni/nodebestpractices"
+    },
+    {
+        "img": "https://i.imgur.com/x8jP8jh.png",
+        "name": "testjavascript/nodejs-integration-tests-best-practices",
+        "desc": "✅ Master the art of the most powerful testing technique for Node.js: Component tests. Including super-comprehensive best practices list and an example app",
+        "url": "https://github.com/testjavascript/nodejs-integration-tests-best-practices"
+    },
+    {
+        "img": "https://i.imgur.com/qrbcEIT.png",
+        "name": "goldbergyoni/javascript-testing-best-practices",
+        "desc": "📗🌐 🚢 Comprehensive and exhaustive JavaScript & Node.js testing best practices",
+        "url": "https://github.com/goldbergyoni/javascript-testing-best-practices"
+    }
+]
