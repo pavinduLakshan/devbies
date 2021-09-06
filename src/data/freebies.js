@@ -9,8 +9,12 @@ import roadmaps from "./roadmaps.json"
 import cheat_sheets from "./cheat_sheets.json"
 import performance from "./performance.json"
 import templates from "./templates.json"
+import best_practices from "./best_practices.json"
+import books from "./books.json"
 
 export const freebies = {
+    "best practices": best_practices,
+    "books": books,
     "css": css,
     "cheat sheets": cheat_sheets,
     "fonts": fonts,

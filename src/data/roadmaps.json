@@ -4,5 +4,16 @@
         "name": "Web Developer Roadmap",
         "desc": "a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops",
         "url": "https://github.com/kamranahmedse/developer-roadmap"
+    },{
+        "img": "https://i.imgur.com/0IEXsDS.png",
+        "name": "data-engineer-roadmap",
+        "desc": "Roadmap to becoming a data engineer in 2021",
+        "url": "https://github.com/datastacktv/data-engineer-roadmap"
+    },
+    {
+        "img": "https://i.imgur.com/1JfutYb.png",
+        "name": "stemmlerjs/software-design-and-architecture-roadmap",
+        "desc": "🧱 The software design and architecture roadmap for any developer",
+        "url": "https://github.com/stemmlerjs/software-design-and-architecture-roadmap"
     }
 ]

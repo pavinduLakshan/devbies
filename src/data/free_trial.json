@@ -1,8 +1,8 @@
 [
     {
-        "img": "https://i.imgur.com/DXzTqQR.png",
-        "name": "Google Cloud Free Program",
-        "desc": "New Google Cloud and Google Maps Platform users can take advantage of a 90-day trial period that includes $300 in free Cloud Billing credits to explore and evaluate Google Cloud and Google Maps Platform products and services. You can use these credits toward one or a combination of products.",
-        "url": "https://cloud.google.com/free/docs/gcp-free-tier"
+        "img": "https://i.imgur.com/HUdwkhF.png",
+        "name": "Free for developers",
+        "desc": "Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to find them all to make informed decisions. This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers.",
+        "url": "https://free-for.dev/#/"
     }
 ]

@@ -10,5 +10,29 @@
         "name": "Velocity - A Dashboard UI Kit",
         "desc": "Beep beep. Meet Velocity, a UI kit for an imaginary self-driving car company. Borrow, remix, and remake for your own app.",
         "url": "https://www.invisionapp.com/inside-design/design-resources/design-system-dashboard-ui-kit/"
+    },
+    {
+        "img": "https://i.imgur.com/gZP1OLt.png",
+        "name": "flatlogic/react-material-admin",
+        "desc": "☄️React Material Admin is a React template built with Material-UI",
+        "url": "https://github.com/flatlogic/react-material-admin"
+    },
+    {
+        "img": "https://i.imgur.com/DofHGOj.png",
+        "name": "flatlogic/light-blue-dashboard",
+        "desc": "🔥 Free and open-source admin dashboard template built with Bootstrap",
+        "url": "https://github.com/flatlogic/light-blue-dashboard"
+    },
+    {
+        "img": "https://i.imgur.com/T0IDeM3.png",
+        "name": "DopestTech/Dev-Folio",
+        "desc": "🔥 A collection of Free Portfolio templates for developers.",
+        "url": "https://github.com/DopestTech/Dev-Folio"
+    },
+    {
+        "img": "https://i.imgur.com/qeBpiZV.png",
+        "name": "DesignRevision/shards-dashboard-react",
+        "desc": "⚛️A free and beautiful React admin dashboard template pack.",
+        "url": "https://github.com/DesignRevision/shards-dashboard-react"
     }
 ]
