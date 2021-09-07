@@ -11,6 +11,7 @@ import performance from "./performance.json"
 import templates from "./templates.json"
 import best_practices from "./best_practices.json"
 import books from "./books.json"
+import resume from "./resume.json"
 
 export const freebies = {
     "best practices": best_practices,
@@ -24,6 +25,7 @@ export const freebies = {
     "images": images,
     "performance": performance,
     "remote jobs": remote_jobs,
+    "resume": resume,
     "roadmaps": roadmaps,
     "templates": templates
 }

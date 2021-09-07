@@ -4,5 +4,11 @@
         "name": "CSS Grid Cheat Sheet",
         "desc": "CSS Grid is definitely gaining a lot of popularity. Combining it with Flexbox, you can do a lot of things that used to be a pain. Here is a nice cheat sheet for CSS Grid",
         "url": "https://grid.malven.co/"
+    },
+    {
+        "img": "https://i.imgur.com/Ns9c2zr.png",
+        "name": "github/actions-cheat-sheet",
+        "desc": "A cheat sheet for GitHub Actions",
+        "url": "https://github.com/github/actions-cheat-sheet"
     }
 ]

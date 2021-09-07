@@ -1,0 +1,20 @@
+[
+    {
+    "img": "https://i.imgur.com/PWXiuzJ.png",
+    "name": "CV Online",
+    "desc": "Create an eye-catching cv online,and stand out from the crowd",
+    "url": "https://cvonline.me/en/home"
+    },
+    {
+        "img": "https://i.imgur.com/BukDCqZ.png",
+        "name": "Cresuma",
+        "desc": "Create a resume that inspires you to the next step.",
+        "url": "https://cresuma.com/"
+    },
+    {
+        "img": "https://i.imgur.com/2XBhKwj.png",
+        "name": "HackerResume",
+        "desc": "Boost your chances of landing that dream job.",
+        "url": "https://hackerresume.com/"
+    }
+]
