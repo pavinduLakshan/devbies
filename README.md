@@ -22,4 +22,4 @@ View the collection [here](https://devbies.ml)
 If you found a free resource and it's not already added here, please consider making a pull request.
 
 ## License
-Serverless Permission Policy Generator is under the MIT license. See the [License](LICENSE.md) for more information.
+Devbies is under the MIT license. See the [License](LICENSE.md) for more information.
