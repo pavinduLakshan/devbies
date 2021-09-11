@@ -34,5 +34,11 @@
         "name": "DesignRevision/shards-dashboard-react",
         "desc": "⚛️A free and beautiful React admin dashboard template pack.",
         "url": "https://github.com/DesignRevision/shards-dashboard-react"
+    },
+    {
+        "img": "https://i.imgur.com/Bgj4KFe.png",
+        "name": "rammcodes/Dopefolio",
+        "desc": "Dopefolio 🔥 - Portfolio Template for Developers 🚀",
+        "url": "https://github.com/rammcodes/Dopefolio"
     }
 ]
