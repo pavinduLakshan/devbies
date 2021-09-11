@@ -16,5 +16,12 @@
         "name": "Simple Icons",
         "desc": "2000+ Free SVG icons for popular brands",
         "url": "https://simpleicons.org/"
+    },
+    {
+        "img": "https://i.imgur.com/PGs6ke3.png",
+        "name": "Avatar Library",
+        "desc": "DiceBear is an avatar library for designers and developers.You can choose between simple identity icons and lovely designed characters.And best of all, It will provide a simple and free HTTP API that you can use right away!",
+        "url": "https://avatars.dicebear.com/"
     }
+
 ]
