@@ -40,5 +40,65 @@
         "name": "rammcodes/Dopefolio",
         "desc": "Dopefolio 🔥 - Portfolio Template for Developers 🚀",
         "url": "https://github.com/rammcodes/Dopefolio"
+    },
+    {
+        "img": "https://i.imgur.com/ZquhJUJ.png",
+        "name": "AdminKit",
+        "desc": "AdminKit is a developer friendly & highly customizable Bootstrap 5 admin template, featuring hundreds of UI components, forms, tables, charts and icons.",
+        "url": "https://demo-basic.adminkit.io/"
+    },
+    {
+        "img": "https://i.imgur.com/iHXVLT7.png",
+        "name": "Datta Able Bootstrap 4 Free Admin template",
+        "desc": "Datta Able Bootstrap Lite is the most stylized Bootstrap 4 Lite Admin Template, around all other Lite/Free admin templates in the market",
+        "url": "https://codedthemes.com/item/datta-able-bootstrap-lite"
+    },
+    {
+        "img": "https://i.imgur.com/Fhd26Ii.png",
+        "name": "Spica Free",
+        "desc": "Spica free is an impressive Admin template designed by BootstrapDash",
+        "url": "https://www.bootstrapdash.com/product/spica-free"
+    },
+    {
+        "img": "https://i.imgur.com/0dBEZJ7.png",
+        "name": "MaterialX",
+        "desc": "Material Dashboard for Bootstrap",
+        "url": "https://yookits.com/product/materialx-material-dashboard-for-bootstrap/"
+    },
+    {
+        "img": "https://i.imgur.com/PaFp5cK.png",
+        "name": "tabler",
+        "desc": "Tabler is free and open-source HTML Dashboard UI Kit built on Bootstrap",
+        "url": "https://github.com/tabler/tabler"
+    },
+    {
+        "img": "https://i.imgur.com/JuNKHj2.png",
+        "name": "airframe",
+        "desc": "Airframe provides all the components a developer needs to build data-intensive web apps using React, Vue, Angular, HTML/CSS and MVC.Net.",
+        "url": "https://airframe.webkom.co/"
+    },
+    {
+        "img": "https://i.imgur.com/UhfI4Pf.png",
+        "name": "Freebies from CodedThemes",
+        "desc": "Are you looking for a Free Admin Template, For your next project? You are at the right place. We are one of the best Free Admin Templates makers in the market.",
+        "url": "https://codedthemes.com/item/category/free-templates/"
+    },
+    {
+        "img": "https://i.imgur.com/WPW4W13.png",
+        "name": "Stisla",
+        "desc": "Free Bootstrap Admin Template",
+        "url": "https://github.com/stisla/stisla"
+    },
+    {
+        "img": "https://i.imgur.com/PaFp5cK.png",
+        "name": "tabler-react",
+        "desc": "React components and demo for the Tabler UI theme.",
+        "url": "https://tabler-react.com/"
+    },
+    {
+        "img": "https://i.imgur.com/xJTsfIY.png",
+        "name": "ngx-admin",
+        "desc": "The most popular admin dashboard based on Angular 9+ and Nebular with Eva Design System support. Free and Open Source for personal and commercial purposes.",
+        "url": "https://akveo.github.io/ngx-admin/"
     }
 ]
