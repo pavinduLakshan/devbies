@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     cardContent: {
       flexGrow: 1,
+      textAlign: "center"
     }
   }));
 
@@ -28,7 +29,7 @@ const Freebie = ({imgPath,name,desc,url}) => {
     const classes = useStyles();
 
     return (
-        <Grid item xs={12} sm={6} md={4} spacing={6}>
+        <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
                 <CardMedia
                     className={classes.cardMedia}
