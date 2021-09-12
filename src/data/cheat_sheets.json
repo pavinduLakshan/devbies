@@ -10,5 +10,11 @@
         "name": "github/actions-cheat-sheet",
         "desc": "A cheat sheet for GitHub Actions",
         "url": "https://github.com/github/actions-cheat-sheet"
+    },
+    {
+        "img": "https://i.imgur.com/XdXCM7G.png",
+        "name": "Keras Cheat Sheet: Neural Networks in Python",
+        "desc": "Make your own neural networks with this Keras cheat sheet to deep learning in Python for beginners, with code samples.",
+        "url": "https://www.datacamp.com/community/blog/keras-cheat-sheet"
     }
 ]
