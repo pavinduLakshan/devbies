@@ -16,5 +16,11 @@
         "name": "Keras Cheat Sheet: Neural Networks in Python",
         "desc": "Make your own neural networks with this Keras cheat sheet to deep learning in Python for beginners, with code samples.",
         "url": "https://www.datacamp.com/community/blog/keras-cheat-sheet"
-    }
+    },
+    {
+        "img": "https://i.imgur.com/N8SU3JZ.png",
+        "name": "Matplotlib Cheat Sheet: Plotting in Python",
+        "desc": "This Matplotlib cheat sheet introduces you to the basics that you need to plot your data with Python and includes code samples.",
+        "url": "https://www.datacamp.com/community/blog/python-matplotlib-cheat-sheet"
+    },
 ]
