@@ -5,7 +5,7 @@
 # Devbies
 A curated collection of 100% free developer resources
 
-View the collection [here](https://devbies.ml)
+View the collection [here](https://devbies.ml) and read the introductory post on Linkedin [here](https://www.linkedin.com/posts/pavindu-lakshan_devbies-freebies-for-developers-activity-6840270922348408832-jURs)
 
 ## A plenty of similar tools already exist. Why this?
 - This only contains 100% free developer resources, no sponsored/promoted content
