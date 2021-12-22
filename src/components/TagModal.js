@@ -54,7 +54,7 @@ export default function TagModal(props) {
               className={classes.tag}
               size="medium"
               onClick={() => {
-                history.push("/?tag=" + tag);
+                history.push("/categories/" + tag.replace(" ","-"));
                 handleClose()
               }}
               color={selectedTagParam === tag ? "secondary" : "primary"}

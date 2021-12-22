@@ -6,6 +6,7 @@ const Routes = () => {
     return (
         <BrowserRouter>
         <Route exact path="/" component={Home} />
+        <Route path="/categories/:category" component={Home}/>
         </BrowserRouter>
     )
 }

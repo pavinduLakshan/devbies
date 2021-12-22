@@ -1,19 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from "react-router-dom"
 import { Grid, Typography, Container, Button } from '@material-ui/core';
 import Freebie from "../components/Freebie"
 import TagModal from "components/TagModal"
+import {useParams} from "react-router-dom"
 import NotSelected from "assets/not_selected.svg"
+import Logo from "assets/logo.svg"
 import { freebies } from "../data"
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import {Helmet} from "react-helmet";
 
 const useStyles = makeStyles((theme) => ({
-  titleContainer: {
-    position: "sticky",
-    top: 0,
-    right: 0,
-    zIndex: 10,
-    backgroundColor: "#BC51F1",
-    width: "100%"
+  root: {
+    flexGrow: 1,
+    backgroundColor: "red"
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+    display: "flex",
+    flexDirection: "row",
+    height: "inherit",
+    alignItems: "center",
+    textDecoration: "none"
   },
   tagContainer: {
     display: "flex",
@@ -60,7 +73,9 @@ const useStyles = makeStyles((theme) => ({
   tagBtn: {
     backgroundColor: "#F50057",
     color: "white",
-    zIndex: 2,   
+    zIndex: 2,
+    width: "40%",
+    marginRight: "2%",
     '&:hover, &:active': {
       background: '#ff4081',
     }
@@ -69,17 +84,10 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
   const classes = useStyles();
-  const params = new URLSearchParams(window.location.search)
-  const selectedTagParam = params.get("tag")
+  let { category } = useParams();
+  let selectedCategory = category?.replace(/-/g," ")
   const [isTagModalOpen, setTagModalOpen] = useState(false)
   const [tags, setTags] = useState([])
-  const totalFreebies = getTotalFreebieCount()
-
-  function getTotalFreebieCount() {
-    let count = 0
-    Object.keys(freebies).map(k => count += freebies[k].length)
-    return Math.floor(count / 10) * 10;
-  }
 
   useEffect(() => {
     setTags(Object.keys(freebies))
@@ -97,31 +105,38 @@ const Home = () => {
 
   return (
     <Grid container spacing={3}>
-      <div className={classes.titleContainer}>
-        <Grid item xs={12} >
-          <Typography className={classes.heading} variant="h4" component="h4">Devbies - Freebies for Developers</Typography>
-          <Typography className={classes.subHeading} variant="h6" component="h4">
-            A curated collection of {totalFreebies}+ free developer resources
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta property="og:title" content="Devbies - Freebies for Developers" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devbies.ml" />
+    <meta property="og:image" content="https://i.imgur.com/Hy4wCNU.png" />
+    <meta property="og:description" content={"Free " + selectedCategory+" for developers"} />
+        <title>Devbies | Freebies for Developers</title>
+        <link rel="canonical" href="http://devbies.ml" />
+      </Helmet>
+      {/* Appbar */}
+      <AppBar position="sticky" style={{    backgroundColor: "#F16751"}}>
+        <Toolbar style={{ display: "flex", alignItems: "center", minHeight: "10vh" }}>
+          <Link to="/" className={classes.title}>
+          <img src={Logo} height="50" width="50" />
+          <Typography variant="h3" style={{ paddingLeft: "2%",fontFamily: "'Imperial Script', cursive"}}>
+            Devbies
           </Typography>
-        </Grid>
-        <Grid item xs={12} className={classes.tagContainer}>
-          <div className={classes.innerTagContainer}>
-            <Button className={classes.tagBtn}
-            fullWidth
+          </Link>
+          <Button className={classes.tagBtn}
             onClick={handleClickOpen}>
-              <strong>{selectedTagParam || "Select a category"}</strong>
-            </Button>
-            <TagModal
-              tags={tags}
-              selectedTagParam={selectedTagParam} open={isTagModalOpen} onClose={handleTagModalClose}
-            />
-          </div>
-        </Grid>
-      </div>
-
+            <strong>{selectedCategory || "Select a category"}</strong>
+          </Button>
+          <TagModal
+            tags={tags}
+            selectedTagParam={selectedCategory} open={isTagModalOpen} onClose={handleTagModalClose}
+          />
+        </Toolbar>
+      </AppBar>
       <Container className={classes.cardGrid}>
         <Grid container spacing={4}>
-          {freebies[selectedTagParam]?.length > 0 && freebies[selectedTagParam].map((freebie, index) => {
+          {freebies[selectedCategory]?.length > 0 && freebies[selectedCategory].map((freebie, index) => {
             return (
               <Freebie
                 key={index}
@@ -132,13 +147,12 @@ const Home = () => {
               />
             )
           })}
-          {!selectedTagParam && <div className={classes.noTagSelected}>
+          {!selectedCategory && <div className={classes.noTagSelected}>
             <img src={NotSelected} alt="no category selected" height="150" width="150" />
             <Typography variant="h6" component="h6">Select a category to view freebies</Typography>
           </div>}
         </Grid>
       </Container>
-
     </Grid>
   );
 };
