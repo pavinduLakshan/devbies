@@ -119,7 +119,7 @@ const Home = () => {
       <AppBar position="sticky" style={{    backgroundColor: "#F16751"}}>
         <Toolbar style={{ display: "flex", alignItems: "center", minHeight: "10vh" }}>
           <Link to="/" className={classes.title}>
-          <img src={Logo} height="50" width="50" />
+          <img src={Logo} alt="Devbies logo" height="50" width="50" />
           <Typography variant="h3" style={{ paddingLeft: "2%",fontFamily: "'Imperial Script', cursive"}}>
             Devbies
           </Typography>
