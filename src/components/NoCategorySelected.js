@@ -6,7 +6,7 @@ import TagModal from "components/TagModal"
 const useStyles = makeStyles({
     root: {
         width: "100%",
-        minHeight: "85vh",
+        minHeight: "80vh",
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "column",
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
         flexGrow: 1
     },
     desc: {
-        marginBottom: "3%"
+        marginBottom: "4%"
     }
 });
 
@@ -35,10 +35,10 @@ const NoCategorySelected = (props) => {
 
     return (
         <div className={classes.root}>
-            <Typography variant="h1" style={{ paddingLeft: "2%",fontFamily: "'Abel', sans-serif"}}>
+            <Typography variant="h1" className={classes.text}>
             Devbies
           </Typography>
-          <Typography variant="h2" style={{ paddingLeft: "2%",fontFamily: "'Abel', sans-serif"}}>
+          <Typography variant="h3" className={`${classes.desc} ${classes.text}`}>
           Freebies for Developers
           </Typography>
           <Typography variant="h4" className={`${classes.desc} ${classes.text}`}>

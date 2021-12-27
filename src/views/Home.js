@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(4),
   },
   gridWithoutItems: {
-    minHeight: "90.5vh",
+    minHeight: "87vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center"
