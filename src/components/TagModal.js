@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import { useHistory } from "react-router-dom"
-import { Chip } from '@material-ui/core';
+import { Chip, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
 import CloseIcon from "@material-ui/icons/Close"
 import { blue } from '@material-ui/core/colors';
+import { freebies } from "../data"
 
 const useStyles = makeStyles({
   avatar: {
@@ -25,25 +26,56 @@ const useStyles = makeStyles({
     textDecoration: "none",
     cursor: "pointer",
   },
+  
+  tagBtn: {
+    backgroundColor: "#F50057",
+    color: "white",
+    zIndex: 2,
+    width: "40%",
+    marginRight: "2%",
+    '&:hover, &:active': {
+      background: '#ff4081',
+    }
+  }
+
+
 });
 
 export default function TagModal(props) {
   const classes = useStyles();
   const history = useHistory()
-  const { onClose, selectedTagParam, open, tags } = props;
+  const [isTagModalOpen, setTagModalOpen] = useState(false)
+  const { selectedTagParam } = props;
+  const [tags, setTags] = useState([])
 
-  const handleClose = () => {
-    onClose(selectedTagParam);
+  useEffect(() => {
+    setTags(Object.keys(freebies))
+  }, [])
+
+  const handleTagModalClose = (event,reason) => {
+    if (reason !== "backdropClick"){
+      setTagModalOpen(false);
+    }
   };
 
+  const handleClickOpen = () => {
+    setTagModalOpen(true);
+  };
+
+
   return (
-    <Dialog
-      maxWidth="sm" onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
+    <>
+              <Button className={classes.tagBtn}
+            onClick={handleClickOpen} fullWidth>
+            <strong>{selectedTagParam || "Select a category"}</strong>
+          </Button>
+          <Dialog
+      maxWidth="sm" onClose={handleTagModalClose} aria-labelledby="simple-dialog-title" open={isTagModalOpen}>
       <DialogTitle id="simple-dialog-title">
         <div style={{ height: "5vh", alignItems: "center", display: "flex", flexDirection: "row" }}>
           <h4>Select a category</h4>
           <div style={{ flexGrow: 1 }}></div>
-          <CloseIcon style={{ cursor: "pointer" }} onClick={handleClose} />
+          <CloseIcon style={{ cursor: "pointer" }} onClick={handleTagModalClose} />
         </div>
       </DialogTitle>
       <List style={{ margin: "2%" }}>
@@ -55,12 +87,13 @@ export default function TagModal(props) {
               size="medium"
               onClick={() => {
                 history.push("/categories/" + tag.replace(" ","-"));
-                handleClose()
+                handleTagModalClose()
               }}
               color={selectedTagParam === tag ? "secondary" : "primary"}
               label={tag}
             />)}
       </List>
     </Dialog>
+    </>
   );
 }
