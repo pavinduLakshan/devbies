@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom"
-import { Grid, Typography, Container, Button } from '@material-ui/core';
+import { Grid, Typography, Container } from '@material-ui/core';
 import Freebie from "../components/Freebie"
 import TagModal from "components/TagModal"
 import {useParams} from "react-router-dom"
-import NotSelected from "assets/not_selected.svg"
 import Logo from "assets/logo.svg"
 import { freebies } from "../data"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import {Helmet} from "react-helmet";
+import NoCategorySelected from 'components/NoCategorySelected';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,7 +49,12 @@ const useStyles = makeStyles((theme) => ({
   },
   cardGrid: {
     paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(8),
+  },
+  gridWithoutItems: {
+    minHeight: "90.5vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
   },
   heading: {
     marginTop: "1%",
@@ -86,22 +91,6 @@ const Home = () => {
   const classes = useStyles();
   let { category } = useParams();
   let selectedCategory = category?.replace(/-/g," ")
-  const [isTagModalOpen, setTagModalOpen] = useState(false)
-  const [tags, setTags] = useState([])
-
-  useEffect(() => {
-    setTags(Object.keys(freebies))
-  }, [])
-
-  const handleTagModalClose = (event,reason) => {
-    if (reason !== "backdropClick"){
-      setTagModalOpen(false);
-    }
-  };
-
-  const handleClickOpen = () => {
-    setTagModalOpen(true);
-  };
 
   return (
     <Grid container spacing={3}>
@@ -120,21 +109,16 @@ const Home = () => {
         <Toolbar style={{ display: "flex", alignItems: "center", minHeight: "10vh" }}>
           <Link to="/" className={classes.title}>
           <img src={Logo} alt="Devbies logo" height="50" width="50" />
-          <Typography variant="h3" style={{ paddingLeft: "2%",fontFamily: "'Imperial Script', cursive"}}>
+          <Typography variant="h4" style={{ paddingLeft: "2%",fontFamily: "'Imperial Script', cursive"}}>
             Devbies
           </Typography>
           </Link>
-          <Button className={classes.tagBtn}
-            onClick={handleClickOpen}>
-            <strong>{selectedCategory || "Select a category"}</strong>
-          </Button>
-          <TagModal
-            tags={tags}
-            selectedTagParam={selectedCategory} open={isTagModalOpen} onClose={handleTagModalClose}
-          />
+          {selectedCategory && <TagModal
+            selectedTagParam={selectedCategory}
+          />}
         </Toolbar>
       </AppBar>
-      <Container className={classes.cardGrid}>
+      <Container className={selectedCategory ? classes.cardGrid : classes.gridWithoutItems}>
         <Grid container spacing={4}>
           {freebies[selectedCategory]?.length > 0 && freebies[selectedCategory].map((freebie, index) => {
             return (
@@ -147,10 +131,7 @@ const Home = () => {
               />
             )
           })}
-          {!selectedCategory && <div className={classes.noTagSelected}>
-            <img src={NotSelected} alt="no category selected" height="150" width="150" />
-            <Typography variant="h6" component="h6">Select a category to view freebies</Typography>
-          </div>}
+          {!selectedCategory && <NoCategorySelected freebies={freebies}/>}
         </Grid>
       </Container>
     </Grid>
