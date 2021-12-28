@@ -96,6 +96,10 @@ const Home = () => {
     <Grid container spacing={3}>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta
+      name="description"
+      content={"Devbies | Free " + selectedCategory+" for developers"}
+    />
         <meta property="og:title" content="Devbies - Freebies for Developers" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://devbies.ml" />
