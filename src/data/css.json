@@ -40,5 +40,11 @@
         "name": "transition.css",
         "desc": "Drop-in CSS transitions",
         "url": "https://www.transition.style/"
+    },
+    {
+        "img": "https://i.imgur.com/XtFO6DP.png",
+        "name": "CSS Section Separator Generator",
+        "desc": "A collection of customizable CSS section separators, with the possibility to easily copy the code.",
+        "url": "https://wweb.dev/resources/css-separator-generator/"
     }
 ]
