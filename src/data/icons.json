@@ -22,6 +22,11 @@
         "name": "Avatar Library",
         "desc": "DiceBear is an avatar library for designers and developers.You can choose between simple identity icons and lovely designed characters.And best of all, It will provide a simple and free HTTP API that you can use right away!",
         "url": "https://avatars.dicebear.com/"
+    },
+    {
+        "img": "https://i.imgur.com/Ubfy19D.png",
+        "name": "App Icon Generator",
+        "desc": "Generate icons and image sets with different resolutions for your mobile apps",
+        "url": "https://appicon.co"
     }
-
 ]
